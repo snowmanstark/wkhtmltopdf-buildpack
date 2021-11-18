@@ -22,7 +22,7 @@ If you want to use a `wkhtmltopdf` version other than 0.12.3, set
 `WKHTMLTOPDF_VERSION`:
 
 ```bash
-heroku config:set WKHTMLTOPDF_VERSION="0.12.4"
+heroku config:set WKHTMLTOPDF_URL="https://link.to.wkhtml.release"
 ```
 
 ### Clearing Repo Cache
