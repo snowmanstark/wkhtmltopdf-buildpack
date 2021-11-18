@@ -13,9 +13,9 @@ TMP_PATH="$BUILD_DIR/tmp"
 mkdir -p $CACHE_DIR $BIN_PATH $LIB_PATH $TMP_PATH
 
 if [[ -f "$ENV_DIR/WKHTMLTOPDF_DOWNLOAD_URL" ]]; then
-  WKHTMLTOPDF_DOWNLOAD_URL=$(cat "$ENV_DIR/WKHTMLTOPDF_DOWNLOAD_URL")
+  WKHTMLTOPDF_URL=$(cat "$ENV_DIR/WKHTMLTOPDF_DOWNLOAD_URL")
 else
-  WKHTMLTOPDF_DOWNLOAD_URL="https://github.com/wkhtmltopdf/wkhtmltopdf/archive/refs/tags/0.12.5.tar.gz"
+  WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/wkhtmltopdf/archive/refs/tags/0.12.5.tar.gz"
 fi
 
 WKHTMLTOPDF_TAR="$CACHE_DIR/wkhtmltox.tar.xz"
