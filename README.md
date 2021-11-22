@@ -14,7 +14,7 @@ binary with your environment.
 and `wkhtmltoimage` binaries:
 
 ```bash
-$ heroku buildpacks:add https://github.com/snowmanstark/wkhtmltopdf-buildpack.git
+$ heroku buildpacks:add --index 1 https://github.com/snowmanstark/wkhtmltopdf-buildpack.git
 ```
 
 If you want to use a `wkhtmltopdf` version other than 0.12.5, set
