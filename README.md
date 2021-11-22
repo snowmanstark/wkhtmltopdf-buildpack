@@ -18,10 +18,10 @@ $ heroku buildpacks:add https://github.com/snowmanstark/wkhtmltopdf-buildpack.gi
 ```
 
 If you want to use a `wkhtmltopdf` version other than 0.12.5, set
-`WKHTMLTOPDF_URL`:
+`WKHTMLTOPDF_DOWNLOAD_URL`:
 
 ```bash
-heroku config:set WKHTMLTOPDF_URL="https://link.to.wkhtml.release"
+heroku config:set WKHTMLTOPDF_DOWNLOAD_URL="https://link.to.wkhtml.release"
 ```
 
 ### Clearing Repo Cache
