@@ -5,21 +5,20 @@ binary with your environment.
 
 ## Versions
 
-* Buildpack:   `0.2`
-* wkhtmltopdf: `0.12.3` by default
+* Buildpack:   `0.1`
+* wkhtmltopdf: 0.12.5-1.focal_amd64.deb by default
 
 ## Usage
 
 [Add this buildpack][2] to your Heroku application to install the `wkhtmltopdf`
-and `wkhtmltoimage` binaries, and the corresponding library `libwkhtmltox`,
-into the dynos:
+and `wkhtmltoimage` binaries:
 
 ```bash
 $ heroku buildpacks:add https://github.com/snowmanstark/wkhtmltopdf-buildpack.git
 ```
 
-If you want to use a `wkhtmltopdf` version other than 0.12.3, set
-`WKHTMLTOPDF_VERSION`:
+If you want to use a `wkhtmltopdf` version other than 0.12.5, set
+`WKHTMLTOPDF_URL`:
 
 ```bash
 heroku config:set WKHTMLTOPDF_URL="https://link.to.wkhtml.release"
@@ -38,7 +37,7 @@ $ heroku repo:purge_cache -a appname
 ## Troubleshooting
 
 If you run into issues when trying to deploy with this buildpack, make sure your
-app is running on `cedar-14` or `heroku-16`. You can check this with:
+app is running on `heroku-20`. You can check this with:
 
 ```bash
 $ heroku stack
